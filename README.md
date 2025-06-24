@@ -20,3 +20,18 @@ It showcases my projects in video editing, programming, game development, 3D art
 ## Preview
 
 Coming Soon!!
+
+---
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).  
+You're allowed to use this for any purpose — even commercial — **as long as you credit me (its.ssskye)** clearly.
+
+---
+
+## Credits
+
+Coded from scratch with HTML, CSS, and JS.  
+Hosted on [Vercel](https://vercel.com).  
+Designed and built by **Skye** (its.ssskye)
