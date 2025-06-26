@@ -51,7 +51,7 @@ nav a {
   pointer-events: none; /* Disable clicking while hidden */
   transition: opacity 0.3s ease, transform 0.3s ease;
   position: absolute;
-  top: 100%;
+  top: calc(100% + 8px);
   background-color: #f8d095;
   box-shadow: 0 8px 16px #00000024;
   padding: 0.5em 0;
