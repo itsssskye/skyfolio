@@ -1,8 +1,10 @@
-document.querySelectorAll('.nav-link').forEach(link => {
+const navLinks = document.querySelectorAll('.nav-link');
+
+navLinks.forEach(link => {
   link.addEventListener('mouseenter', () => {
-    // Randomly choose -30deg or 30deg
-    const rotateDeg = Math.random() < 0.5 ? -30 : 30;
-    link.style.transform = `rotate(${rotateDeg}deg)`;
+    // Randomly choose -15deg or 15deg
+    const direction = Math.random() < 0.5 ? -15 : 15;
+    link.style.transform = `rotate(${direction}deg)`;
   });
 
   link.addEventListener('mouseleave', () => {

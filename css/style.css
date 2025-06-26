@@ -39,6 +39,11 @@ nav a {
     transition: transform 0.2s ease;
 }
 
+.nav-link {
+  transition: transform 0.2s ease;
+  display: inline-block;
+}
+
 /* Dropdown container */
 .dropdown {
   position: relative;
