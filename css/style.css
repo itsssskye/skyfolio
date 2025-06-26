@@ -63,8 +63,8 @@ nav a {
   pointer-events: none; /* Disable clicking while hidden */
   transition: opacity 0.3s ease, transform 0.3s ease;
   position: absolute;
-  top: 100%;
-  padding-top: 1rem; /* Invisible buffer zone to expand hover area */
+  top: calc(100% + 9px);
+  padding-top: 1rem;
   background-color: #f8d095;
   box-shadow: 0 8px 16px #00000024;
   padding: 0.5em 0;
@@ -82,6 +82,17 @@ nav a {
   font-size: 1rem;
   transition: background 0.2s, border-radius 0.2s;
   border-radius: 0.5rem;
+}
+
+/* Collision extend */
+.dropdown-content::before {
+  content: "";
+  position: absolute;
+  top: -9px;
+  left: 0;
+  width: 100%;
+  height: 9px;
+  background: transparent;
 }
 
 /* Hover style */
