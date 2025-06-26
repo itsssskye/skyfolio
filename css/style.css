@@ -78,5 +78,7 @@ nav a {
 
 /* Show dropdown on hover */
 .dropdown:hover .dropdown-content {
-  display: block;
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
 }
