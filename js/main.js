@@ -2,8 +2,8 @@ const navLinks = document.querySelectorAll('.nav-link');
 
 navLinks.forEach(link => {
   link.addEventListener('mouseenter', () => {
-    // Randomly choose -15deg or 15deg
-    const direction = Math.random() < 0.5 ? -15 : 15;
+    // Randomly choose -10deg or 10deg
+    const direction = Math.random() < 0.5 ? -10 : 10;
     link.style.transform = `rotate(${direction}deg)`;
   });
 
