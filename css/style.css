@@ -49,6 +49,12 @@ nav a {
   position: relative;
 }
 
+/* Wrapper for dropdown link & content */
+.dropdown-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
 /* Dropdown menu */
 .dropdown-content {
   display: block;
@@ -57,7 +63,8 @@ nav a {
   pointer-events: none; /* Disable clicking while hidden */
   transition: opacity 0.3s ease, transform 0.3s ease;
   position: absolute;
-  top: calc(100% + 8px);
+  top: 100%;
+  padding-top: 1rem; /* Invisible buffer zone to expand hover area */
   background-color: #f8d095;
   box-shadow: 0 8px 16px #00000024;
   padding: 0.5em 0;
@@ -73,17 +80,18 @@ nav a {
   color: #ffffff;
   text-decoration: none;
   font-size: 1rem;
-  transition: background 0.2s;
+  transition: background 0.2s, border-radius 0.2s;
+  border-radius: 0.5rem;
 }
 
 /* Hover style */
 .dropdown-content a:hover {
   background-color: #f7dbb1;
-  border-radius: 0.5rem;
 }
 
 /* Show dropdown on hover */
-.dropdown:hover .dropdown-content {
+.dropdown:hover .dropdown-content,
+.dropdown-wrapper:hover .dropdown-content {
   opacity: 1;
   transform: translateY(0);
   pointer-events: auto;
