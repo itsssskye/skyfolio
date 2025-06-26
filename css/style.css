@@ -45,11 +45,15 @@ nav a {
 
 /* Dropdown menu */
 .dropdown-content {
-  display: none;
+  display: block;
+  opacity: 0;
+  transform: translateY(10px); /* Move it down a little */
+  pointer-events: none; /* Disable clicking while hidden */
+  transition: opacity 0.3s ease, transform 0.3s ease;
   position: absolute;
   top: 100%;
   background-color: #f8d095;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 16px #00000024;
   padding: 0.5em 0;
   border-radius: 1rem;
   min-width: 200px;
