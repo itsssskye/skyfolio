@@ -1,14 +1,3 @@
-/* Main Style */
-body {
-    background-color: #ffffff;
-    color: #000000;
-    font-family: sans-serif;
-    padding: 40px;
-}
-
-/* Contents */
-h1 {
-    color: #000000;
-}
-
+@import url('./base.css');
+@import url('./navbar.css');
 @import url('./dropdown.css');
