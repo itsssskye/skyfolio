@@ -1,0 +1,35 @@
+/* Navigation bar */
+nav {
+    background-color: #f5c275;
+    padding: 1em 2em;
+    border-radius: 2.5rem;    
+    box-shadow: -5px 5px 10px #00000050;
+    padding: 2em 1em;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+/* Navigation items */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding: 0; margin: 0;
+}
+
+/* Navigation text */
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 1.5rem;
+    transition: transform 0.2s ease;
+}
+
+/* Navigation items tilt animation */
+.nav-link {
+  transition: transform 0.2s ease;
+  display: inline-block;
+}
